@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>objects</title>
+</head>
+<body>
+
+
+<script>
+
+// let emp1 = {
+//     employeeId: "1",
+//     name: "Ezra",
+//     jobTitle: "Theater Teacher",
+//     payRate: 38.46
+// }
+
+// let emp2 = {
+//     employeeId: "2",
+//     name: "sam",
+//     jobTitle: "web developer",
+//     payRate: 49.50
+// }
+
+// // console.log(`Employee 1 is : ${emp1.name[2]} `);
+
+// function logEmployeeName(emp) {
+//     console.log(`Employee is : ${emp.name} `);
+
+// }
+// logEmployeeName(emp1);
+// logEmployeeName(emp2);
+
+
+
+function createPayStub(id, name, payRate, hoursWorked) {
+    let grossPay = 0;
+    if (hoursWorked <= 40) {
+        grossPay = payRate * hoursWorked;
+    }
+    else {
+        grossPay = (40 * payRate) + ((hoursWorked - 40) * 1.5 * payRate);
+        let payStub = {employeeId: id, name: name, grossPay: grossPay};
+        return payStub;
+    }
+    let emp1PayStub = createPayStub("1", "Ezra", 38.46, 49);
+    console.log(emp1PayStub.name + " earned $" + emp1PayStub.grossPay.toFixed(2));
+    
+    let emp2PayStub = createPayStub("2", "Elisha", 43.27, 42);
+    console.log(emp2PayStub.name + " earned $" + emp2PayStub.grossPay.toFixed(2));
+}
+createPayStub(1,sam,10,40);
+</script>
+</body>
+</html>
