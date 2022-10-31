@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product code</title>
+  </head>
+  <body>
+    <script>
+      let user1 = {
+        name: "sam",
+        address: "123 Park Ave",
+        city: "Pittsburgh",
+        state: "PA",
+        zip: "12345",
+      };
+
+      function printContact(userInfo) {
+        console.log(userInfo.name);
+        console.log(userInfo.address);
+        console.log(`${userInfo.city},${userInfo.state},${userInfo.zip}`);
+      }
+      printContact(user1);
+    </script>
+  </body>
+</html>
