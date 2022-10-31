@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array2</title>
+</head>
+<body>
+    <h1>Days of the week starting on <span></span> </h1>
+    <ol></ol>
+    <script>
+        let daysOfWeek = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday',"Saturday"];
+        // console.log(daysOfWeek);
+
+        let date = daysOfWeek[0];
+        // console.log(date);
+
+        let spanElement = document.   querySelector('span');
+        // console.log(spanElement);
+        spanElement.innerText = date;
+        // console.log(spanElement);
+
+
+        function makeLI(item,index) {
+            let list = document.querySelector('ol'); ///
+            let liElement = document.createElement('li');
+            list.appendChild(liElement).innerText = daysOfWeek[index];
+
+        }
+        daysOfWeek.forEach(makeLI);
+
+        let list = document.querySelector('ol');
+        let liElement = document.createElement('li');
+        
+    </script>
+</body>
+</html>
