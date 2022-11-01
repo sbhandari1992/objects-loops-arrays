@@ -16,22 +16,28 @@
         let date = daysOfWeek[0];
         // console.log(date);
 
-        let spanElement = document.   querySelector('span');
+        let spanElement = document.querySelector('span');
         // console.log(spanElement);
         spanElement.innerText = date;
         // console.log(spanElement);
 
 
-        function makeLI(item,index) {
-            let list = document.querySelector('ol'); ///
-            let liElement = document.createElement('li');
-            list.appendChild(liElement).innerText = daysOfWeek[index];
+        // function makeLI(item,index) {
+        //     let list = document.querySelector('ol'); ///
+        //     let liElement = document.createElement('li');
+        //     list.appendChild(liElement).innerText = daysOfWeek[index];
 
-        }
-        daysOfWeek.forEach(makeLI);
+        // }
+        // daysOfWeek.forEach(makeLI);
 
         let list = document.querySelector('ol');
         let liElement = document.createElement('li');
+
+        for(i =0; i < daysOfWeek.length; i++){
+            console.log(i);
+            let liElement = document.createElement('li');
+            list.appendChild(liElement).innerText = daysOfWeek[i];
+        }
         
     </script>
 </body>
