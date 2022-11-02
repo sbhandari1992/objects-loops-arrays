@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>finding subset</title>
+</head>
+<body>
+    <script>
+        let menu = [
+            {id: 1, item: "Tacos",category: "Meal",price: 12.29},
+            {id: 2, item: "Burger",category: "Meal",price: 7.29},
+            {id: 3, item: "Salad",category: "Meal",price: 8.29},
+            {id: 4, item: "Ice Tea",category: "Drinks",price: 2.19},
+            {id: 5, item: "Coke",category: "Drinks",price: 2.29}
+
+        ];
+
+        function getMenuItemsInCategory(menu, category) {
+            let matching = [];
+            let numItems = menu.length;
+            for (let i = 0; i < numItems; i++) {
+                if (menu[i].category == category) {
+                    matching.push(menu[i]);
+
+                }
+
+            }
+            return matching;
+            
+        }
+
+        //to show all of the drinks in array 
+        let drinks = getMenuItemsInCategory(menu,"Drinks");
+        console.log(drinks);
+
+        //to show drinks item 
+        let numOfDrinks = drinks.length;
+        console.log(numOfDrinks);
+
+        for (let i = 0; i < numOfDrinks; i++) {
+            console.log(`${drinks[i].item} cost is ${drinks[i].price}`);
+
+        }
+
+    </script>
+    
+</body>
+</html>
