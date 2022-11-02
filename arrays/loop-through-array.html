@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop through array</title>
+</head>
+<body>
+    <script>
+        let myOrder = [
+            {item: "chicken Taco",price: 8.95,},
+            {item: "Guacomole",price: 2.85},
+            {item: "Sweet Tea", price: 2.75}
+        ];
+        let yourOrder = [
+            {item: "Hamburger",price: 6.95,},
+            {item: "Fries",price: 2.25},
+            {item: "Fried Apple Pie", price: 4.95}
+        ];
+
+        function getMealCost(orders) {
+            let sum = 0;
+            let numOrder = orders.length;
+            for (let i = 0; i < numOrder; i++) {
+                console.log(`i is ${i}`);
+                sum += orders[i].price;
+                console.log(`sum is ${sum}`);
+            }
+            return sum;
+
+        }
+
+        let mealCost = getMealCost(yourOrder);
+        console.log(mealCost);
+        let totalWithTips = (mealCost * 1.2).toFixed(2);
+        console.log(`Your total meal price ${totalWithTips}`);
+    </script>
+</body>
+</html>
