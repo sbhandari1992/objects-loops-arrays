@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>expand-and-search-array</title>
+</head>
+<body>
+
+    <script>
+        let team = ["Yankees","Rangers","Blue Jay","Astors","White Sox","Rangers"];
+        let index = team.indexOf("Rangers");
+        console.log(index);
+        let firstIndex = team.indexOf('Rangers');
+        let lastIndex = team.lastIndexOf('Rangers');
+        console.log(firstIndex,lastIndex);
+
+        if (index == -1) {
+            console.log('item not found');
+        }
+        else {
+            console.log(`Item at ${index}`);
+        }
+    </script>
+    <!-- <script>
+        let kids = ["Natalie","Brittany","Zachary"];
+        kids[kids.length] = "Brandon";
+        console.log(kids);
+        kids[6] = "Brandon";
+        console.log(kids);
+
+
+    </script> -->
+</body>
+</html>
