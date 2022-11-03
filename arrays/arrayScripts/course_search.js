@@ -47,6 +47,7 @@ for (let i = 0; i < numOfCourse; i++) {
     console.log(arrayObject);
 
     if (arrayObject.CourseId & arrayObject.Title) {
+        console.log('yes got it ');
 
     }
 
