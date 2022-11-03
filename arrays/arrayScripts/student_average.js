@@ -9,13 +9,30 @@ let students = [
 
 console.log(students.length);
 for (let i = 0; i < students.length; i++) {
-    console.log(students[i]);
-    for (let j = 0; j < students[i].length; j++) {
-        console.log(students[i][j]);
+    // // console.log(students[i]);
+    // let studentObject = students[i];
+    // console.log(studentObject.length);
+    for (let object in students[i].scores) {
+        console.log(object);
+
     
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // let studentLength = students.length;
 // let studentObj = (students[0]);
 // console.log(studentObj);

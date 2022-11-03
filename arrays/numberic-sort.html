@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>numberic sort</title>
+</head>
+<body>
+
+    <script>
+        let numbers = [2,45,3,66,75,43,1,45,50,];
+
+        function compareAccendingNumber(a,b) {
+            //one way to do
+            return a - b ;
+
+            /// second way to  to 
+            // if (a < b) return -1;
+            // else if (a == b) return 0;
+            // else return 1
+
+            /// third way to do 
+            // return a > b ? 1 : a < b ? -1 : 0;
+
+            /// fourth way to do 
+            // console.log(numbers.sort((a, b) => b - a));
+
+        }
+        function compareDecendingNumber(a,b) {
+            return b - a;
+            // if (a > b) return -1;
+            // else if (a == b) return 0;
+            // else return 1
+
+            // return a > b ? 1 : a < b ? -1 : 0;
+
+        }
+
+        // console.log(`numbers NOT sorted are ${numbers}`);
+        // numbers.sort(compareAccendingNumber);
+        // console.log(`Accending numbers sorted are ${numbers}`);
+        // console.log(number.sort((a, b) => a - b));
+
+        // console.log(`numbers NOT sorted are ${numbers}`);
+        numbers.sort(compareDecendingNumber);
+        console.log(`decending numbers sorted are ${numbers.sort(compareDecendingNumber)}`);
+        // console.log(numbers.sort((a, b) => b - a));
+    </script>
+</body>
+</html>
