@@ -35,27 +35,49 @@ let courses = [
         Fee: "50.00",
     }
 ];
-// When does the PROG200 course start?
-// What is the title of the PROJ500 course?
-// What are the titles of the courses that cost $50 or less? // What classes meet in "Classroom 1"?
+
+let courseStartPROG200 = [];
+let titleOfPROJ500 = [];
+let findCheapCourses = [];
+let classroom1meet = [];
 
 let numOfCourse = courses.length;
 for (let i = 0; i < numOfCourse; i++) {
     let arrayObject = courses[i];
-    // let courseId = courses[i].CourseId;
-    // let title = courses[i].Title;
-    // let location = courses[i].Location;
-    // let date = courses[i].StartDate;
-    // let fee = courses[i].Fee;
 
-    console.log(arrayObject);
+    /// When does the PROG200 course start?
+    if (arrayObject.CourseId == 'PROG200') {
+        courseStartPROG200.push(arrayObject.StartDate);
+    }
+    /// What is the title of the PROJ500 course?
+    if (arrayObject.CourseId == "PROJ500" ) {
+        titleOfPROJ500.push(arrayObject.Title);
+    }
+    /// What are the titles of the courses that cost $50 or less?
+    if (arrayObject.Fee <= 50 ) {
+        findCheapCourses.push(arrayObject.Title);
+    }
+    ///What classes meet in "Classroom 1"?
+    if (arrayObject.Location ==  "Classroom 1" ) {
+        classroom1meet.push(arrayObject.Title);
 
-    // if (arrayObject.CourseId & arrayObject.Title) {
-    //     console.log('yes got it ');
-
-    // }
-
-
+    }
 }
-const numbers = [2,3,1,14];
-console.log(numbers.sort());
+// / When does the PROG200 course start?
+console.log(`Your PROG200 course start at ${courseStartPROG200}`);
+/// What is the title of the PROJ500 course?
+console.log(`Your title of the PROJ500 course is ${titleOfPROJ500}`);
+/// What are the titles of the courses that cost $50 or less?
+console.log(`Your titles of the courses that cost $50 or less are ${findCheapCourses}`);
+/// What classes meet in "Classroom 1"?
+console.log(`Title with ${classroom1meet} meet on classroom 1`);
+
+
+
+
+
+
+
+
+
+
