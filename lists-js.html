@@ -139,10 +139,12 @@
         let length = states.length;
         console.log(length);
         for (let i = 0; i < length; i++) {
-          let theOption = document.createElement("option");
-          theOption.textContent = states[i];
-          theOption.value = abbreviations[i];
-          stateList.appendChild(theOption);
+          // let theOption = document.createElement("option");
+          let theOption = new Option(states[i],abbreviations[i]);
+          // theOption.textContent = states[i];
+          // theOption.value = abbreviations[i];
+          // stateList.appendChild(theOption);
+          document.getElementById('statesList').appendChild(theOption);
         }
       };
     </script>

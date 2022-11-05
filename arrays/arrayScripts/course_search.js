@@ -35,21 +35,27 @@ let courses = [
         Fee: "50.00",
     }
 ];
+// When does the PROG200 course start?
+// What is the title of the PROJ500 course?
+// What are the titles of the courses that cost $50 or less? // What classes meet in "Classroom 1"?
+
 let numOfCourse = courses.length;
 for (let i = 0; i < numOfCourse; i++) {
     let arrayObject = courses[i];
-    let courseId = courses[i].CourseId;
-    let title = courses[i].Title;
-    let location = courses[i].Location;
-    let date = courses[i].StartDate;
-    let fee = courses[i].Fee;
+    // let courseId = courses[i].CourseId;
+    // let title = courses[i].Title;
+    // let location = courses[i].Location;
+    // let date = courses[i].StartDate;
+    // let fee = courses[i].Fee;
 
     console.log(arrayObject);
 
-    if (arrayObject.CourseId & arrayObject.Title) {
-        console.log('yes got it ');
+    // if (arrayObject.CourseId & arrayObject.Title) {
+    //     console.log('yes got it ');
 
-    }
+    // }
 
 
 }
+const numbers = [2,3,1,14];
+console.log(numbers.sort());
