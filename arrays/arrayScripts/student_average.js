@@ -14,7 +14,7 @@ for (let i = 0; i < students.length; i++) {
     let avarageScore = 0;
     for (let j = 0; j < studentScore.length; j++) {
         sum  += studentScore[j];
-        avarageScore = (sum / studentScore.length).toFixed(2);
     }
+    avarageScore = (sum / studentScore.length).toFixed(2);
     console.log(`student ${studentsObj.name} avarage score is ${avarageScore}`);
 }
