@@ -102,16 +102,15 @@ function findVehiclesByHoldCapacity(vehiclesInfo) {
     return foundVehicles;
 }
 // Which vehicles have license plates that end with "222"?
-// let vehiclesLength = vehicles.length;
-// console.log(vehiclesLength);
-// for (let i = 0; i < vehiclesLength; i++) {
-//     let currentDate = new Date();
-//     console.log(currentDate);
-    
-//     // if (vehicles[i].registrationExpires < ) {
-
-//     // }
-//     // console.log(vehicles[i].registrationExpires);
-
-
-// }
+console.log(`Vehicles with license plate that ends with 222 are:  ${findVehiclesbyLicensePlate(vehicles)}`);
+function findVehiclesbyLicensePlate(vehiclesInfo) {
+  let foundVehicles = [];
+  let findingLastNumber = "222"
+  for (let i = 0; i < vehiclesInfo.length; i++) {
+    // console.log(vehicles[i].licenseNo.lastIndexOf('222') == -1);
+      if (vehicles[i].licenseNo.indexOf(findingLastNumber) === 4) {
+          foundVehicles.push(vehiclesInfo[i].type);
+      }
+  }
+  return foundVehicles;
+}
