@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice recall</title>
+  </head>
+  <body>
+    <script>
+    //   let employeeName = ["Kevin", "Devid", "Natale"];
+    //   console.log(employeeName[1]);
+    //   let invoices = [
+    //     { invoiceDate: 6 / 6 / 2022, invoiceNumber: 1, amountDue: 100.0 },
+    //     { invoiceDate: 6 / 7 / 2022, invoiceNumber: 3, amountDue: 1560.0 },
+    //   ];
+      ///loop through an array of object
+      let menu = [
+        { id: 1, item: "Tacos", category: "Meal", price: 12.29 },
+        { id: 2, item: "Burger", category: "Meal", price: 7.29 },
+        { id: 3, item: "Salad", category: "Meal", price: 8.29 },
+        { id: 4, item: "Ice tea", category: "Drink", price: 2.19 },
+        { id: 5, item: "Coke", category: "Drink", price: 2.29 },
+      ];
+      // step 1: make a veriable that represents what you are looking for
+    //   let searchId = 4;
+      let searchCategory = 'Meal';
+
+      //step 2: make an empty array to hold that matches
+    //   let matching = [];
+    //   console.log(matching);
+
+      let matchingCategory = [];
+      console.log(matchingCategory);
+      console.log(matchingCategory.length);
+
+      //loop through the array to find our searchId 4
+      //make the veriable that store the length of the menu
+      let numOfMenuItems = menu.length;
+
+      for (let i = 0; i < numOfMenuItems; i++) {
+        // if (menu[i].id == searchId) {
+        //     matching.push(menu[i].item);
+        // }
+        if (menu[i].category == searchCategory) {
+            matchingCategory.push(menu[i]);
+        }
+        
+      }
+    </script>
+  </body>
+</html>
