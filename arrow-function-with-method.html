@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow-function-with-method</title>
+</head>
+<body>
+    <!-- <script>
+        let numbers = [330,150,25];
+        // function getSum(currentTotal,arrayValue) {
+        //     return currentTotal + arrayValue;
+        // }
+        let sum = numbers.reduce((currentTotal,arrayValue) => currentTotal + arrayValue);
+        console.log(sum);
+    </script> -->
+    <script>
+        //arrow function with find method
+        let addOnOption = [
+            { item: "A/C", price: 1019.00 },
+            { item: "Sunroof", price: 699.99 },
+            { item: "AM/FM Stereo", price: 199.00 }
+        ];
+        
+        let oncheapOption = addOnOption.find((arrayValue) => arrayValue.price < 500);
+        console.log(oncheapOption);
+
+
+    </script>
+</body>
+</html>

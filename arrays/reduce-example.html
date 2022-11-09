@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reduce() example</title>
+</head>
+<body>
+    <!-- <script>
+        let invoiceAmounts = [5,10,15,10];
+
+        let initValue = 1;
+        let invoicesTot = invoiceAmounts.reduce(reducer, initValue);
+        console.log(invoicesTot);
+
+
+        function reducer(sum, value) {
+            return sum * value;
+        }
+
+    </script> -->
+    <!-- <script>
+        let numbers = [300,150,25];
+        let totNumSum = numbers.reduce(getSum, 0);
+
+        function getSum(currentTotal, arrayValue) {
+            return currentTotal + arrayValue;
+        }
+        console.log(totNumSum);
+
+    </script> -->
+    <script>
+        let purchaseOption = [
+            {items: "A/C", price: 1019.00},
+            {items: "Sumroof", price: 699.99},
+            {items: "AM/FM Stereo", price: 199.00}
+        ];
+        let totalPurchasePrice = purchaseOption.reduce(getTotCost,0);
+
+        function getTotCost(currentTotal,arrayValue) {
+            console.log(arrayValue);
+            console.log(arrayValue.price);
+
+            return currentTotal + arrayValue.price;
+
+        }
+        console.log(totalPurchasePrice);
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- // let invoicesTot =  invoiceAmounts.reduce((accumulator,currentValue) => {
+    //     return accumulator + currentValue;
+    // });
+    // console.log(invoicesTot); -->

@@ -36,34 +36,34 @@ let courses = [
     }
 ];
 
-// // When does the PROG200 course start?
-// function getStartDateByID(arrayValue) {
-//     let searchId = 'PROG200';
-//     return(arrayValue.CourseId == searchId ? true : false);
-// }
-// let coursePROG200StartDate = courses.find(getStartDateByID).StartDate;
-// console.log(`Your PROG200 course start at ${coursePROG200StartDate}`);
+// When does the PROG200 course start?
+function getStartDateByID(arrayValue) {
+    let searchId = 'PROG200';
+    return(arrayValue.CourseId == searchId ? true : false);
+}
+let coursePROG200StartDate = courses.find(getStartDateByID).StartDate;
+console.log(`Your PROG200 course start at ${coursePROG200StartDate}`);
 
-// /// What is the title of the PROJ500 course?
-// function gettitleOfPROJ500(arrayValue) {
-//     let searchId = 'PROJ500'
-//     return(arrayValue.CourseId == searchId ? true : false);
-// }
-// let titleOfPROJ500 = courses.find(gettitleOfPROJ500).Title;
-// console.log(`Your title of the PROJ500 course is ${titleOfPROJ500}`);
+/// What is the title of the PROJ500 course?
+function gettitleOfPROJ500(arrayValue) {
+    let searchId = 'PROJ500'
+    return(arrayValue.CourseId == searchId ? true : false);
+}
+let titleOfPROJ500 = courses.find(gettitleOfPROJ500).Title;
+console.log(`Your title of the PROJ500 course is ${titleOfPROJ500}`);
 
-// // /// What are the titles of the courses that cost $50 or less?
-// function getCheapCourses(arrayValue) {
-//     return(arrayValue.Fee <= 50 ? true : false);
-// }
-// let cheapCourses = courses.filter(getCheapCourses);
-// console.log(cheapCourses);
-// let titles = [];
-// console.log(titles);
-// for (let i = 0; i < cheapCourses.length; i++) {
-//     titles.push(cheapCourses[i].Title);
-// }
-// console.log(`Your titles of the courses that cost $50 or less are ${titles}`);
+// /// What are the titles of the courses that cost $50 or less?
+function getCheapCourses(arrayValue) {
+    return(arrayValue.Fee <= 50 ? true : false);
+}
+let cheapCourses = courses.filter(getCheapCourses);
+console.log(cheapCourses);
+let titles = [];
+console.log(titles);
+for (let i = 0; i < cheapCourses.length; i++) {
+    titles.push(cheapCourses[i].Title);
+}
+console.log(`Your titles of the courses that cost $50 or less are ${titles}`);
 
 // /// What classes meet in "Classroom 1"?
 function getTitleByClassroom(arrayValue) {

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map-example</title>
+</head>
+<body>
+    <!-- <script>
+        let numbers = [1,2,3,4,5];
+        console.log(numbers);
+
+        /// make a new array (of the same length) of numbers with map()
+        let numbersPlusTwo = numbers.map(function (num) {
+            console.log(num);
+            return num + 2;
+
+        })
+        console.log(`numbersPlusTwo array is ${numbersPlusTwo}`);
+    </script> -->
+    <script>
+        let kids = [
+            {first: 'Natalie', last: 'plyers'},
+            {first: 'Sam', last: 'Bhandari'},
+            {first: 'Ram', last: 'Thapa'}
+        ];
+        console.log(kids);
+
+        function buildFullName(kidsName) {
+            return `${kidsName.first} ${ kidsName.last}`;
+            // return kidsName.first + " " + kidsName.last;
+        }
+        // console.log(buildFullName(kids));
+
+        let fullNameList = kids.map(buildFullName);
+        console.log(`namelist is ${fullNameList}`);
+        console.log(fullNameList);
+
+
+
+
+        /// make a new array (of the same length) of numbers with map()
+
+    </script>
+</body>
+</html>
